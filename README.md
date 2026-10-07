@@ -1,5 +1,14 @@
 # ClueTide
 
+## 赛道演示 · Track demos
+
+| Track | Live demo | Review source |
+| --- | --- | --- |
+| GCC · 调查与证据 | [GCC Demo](https://hnnuyuxuan.github.io/cluetide-app/gcc/) | [GCC source and bilingual guide](https://github.com/HNNUYUXUAN/cluetide-review/tree/GCC) |
+| BOT · Evidence version history | [English BOT Demo](https://hnnuyuxuan.github.io/cluetide-app/bot/) | [BOT source and English guide](https://github.com/HNNUYUXUAN/cluetide-review/tree/BOT) |
+
+These static demos contain public case material, evidence downloads and browser verification. Full local services are documented in the review branches. The review repository is currently private; the demos are public. 本仓库 `docs/gcc` 与 `docs/bot` 托管各赛道构建产物；评审源码位于独立私有仓库的对应分支。
+
 ClueTide 将 Ethereum 大额 Transfer 告警整理成有范围、可引用、可导出的调查证据，并支持报告版本更正与 BOT 合约复核。默认运行公开历史快照和 FunctionModel 规则模拟，便于在本地完整体验调查、导出、第二客户端导入、复核与 v1→v2 更正。
 
 公开静态体验入口为 [离线证据 Demo](https://hnnuyuxuan.github.io/cluetide-app/)（[静态文件](docs/)）。完整本地应用使用 Python 后端与 React 前端；静态 Demo 的功能范围在页面中标明。
