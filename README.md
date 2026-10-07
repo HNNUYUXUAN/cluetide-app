@@ -2,7 +2,7 @@
 
 ClueTide 将 Ethereum 大额 Transfer 告警整理成有范围、可引用、可导出的调查证据，并支持报告版本更正与 BOT 合约复核。默认运行公开历史快照和 FunctionModel 规则模拟，便于在本地完整体验调查、导出、第二客户端导入、复核与 v1→v2 更正。
 
-公开静态体验入口为 [离线证据 Demo](docs/index.html)。完整本地应用使用 Python 后端与 React 前端；静态 Demo 的功能范围在页面中标明。
+公开静态体验入口为 [离线证据 Demo](https://hnnuyuxuan.github.io/cluetide-app/)（[静态文件](docs/)）。完整本地应用使用 Python 后端与 React 前端；静态 Demo 的功能范围在页面中标明。
 
 ## 本地启动
 
