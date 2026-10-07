@@ -1,0 +1,23 @@
+{
+  "schema_version": "cluetide.public-product.v1",
+  "name": "ClueTide",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Bounded Ethereum event investigation and evidence version review",
+  "runtime": "Python 3.12 / FastAPI / PydanticAI / React 19 / Vite",
+  "default_execution": "FunctionModel offline simulation with public Ethereum snapshots",
+  "public_cases": [
+    "uniswap93",
+    "euler-20230313"
+  ],
+  "evidence_schema": "cluetide.evidence.v1",
+  "bot_contract": {
+    "source": "contracts/ClueTideRegistry.sol",
+    "artifact": "contracts/artifacts/ClueTideRegistry.json",
+    "local_simulator": "Py-EVM",
+    "real_deployment_status": "user_managed"
+  },
+  "third_party_terms": "data/attribution/依赖与许可索引.json",
+  "static_demo_entry": "docs/index.html",
+  "integrity_statement": "SHA-256 binds bytes. Evidence interpretation, independent review and real on-chain receipts require separate verification."
+}

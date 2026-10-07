@@ -1,0 +1,17 @@
+# Local credentials, runtime state and development tools
+.env
+.env.*
+.venv/
+.tools/
+local-data/
+local-only/
+node_modules/
+frontend/dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+*.sqlite*
+*.db
+*.log
+*.tsbuildinfo

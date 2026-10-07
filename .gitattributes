@@ -1,0 +1,19 @@
+* text=auto
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.zip -text
+data/cases/** -text
+data/attribution/licenses/** -text
+contracts/ClueTideRegistry.sol -text
+contracts/artifacts/ClueTideRegistry.json -text
+
+# Files referenced by integrity records retain their original bytes.
+pyproject.toml -text
+requirements-lock.txt -text
+frontend/package.json -text
+frontend/package-lock.json -text
+docs/** -text

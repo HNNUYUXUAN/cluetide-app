@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="ClueTide 离线证据示例：沿着公开交易事实查看解释、复核版本与证据包完整性。">
+  <title>ClueTide · 让解释回到证据</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+  <header class="site-header">
+    <a class="brand" href="#case" aria-label="ClueTide 案件首页"><img src="./assets/mark.svg" alt="" width="34" height="34"><span>ClueTide</span></a>
+    <nav aria-label="主要导航">
+      <a href="#case" data-route="case">案件</a>
+      <a href="#review" data-route="review">版本复核</a>
+      <a href="#verify" data-route="verify">验证证据包</a>
+    </nav>
+    <span class="offline-badge"><span aria-hidden="true"></span>离线示例</span>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="demo-notice"><strong>公开事实 × 合成复核流程</strong><span>交易数据来自已保存的公开 Ethereum 记录；报告与复核角色为流程示例。所有验证在浏览器本地完成。</span></div>
+    <div id="load-status" class="status-panel" role="status">正在校验证据包…</div>
+    <section class="screen" data-screen="case" aria-labelledby="case-title">
+      <div class="eyebrow">ETHEREUM · UNISWAP 提案 93</div>
+      <div class="case-heading"><div><h1 id="case-title">一亿 UNI 转入 dead 地址。<br>沿着证据，理解这笔转账。</h1><p class="lead">大额转账触发调查线索。回执、治理行动与合约状态，共同决定解释能走到哪里。</p></div><a class="button secondary" href="#review">查看复核如何更正解释 <span aria-hidden="true">↗</span></a></div>
+      <div class="fact-strip" aria-label="案件摘要"><div><span class="label">转账数量</span><strong>100,000,000 <small>UNI</small></strong></div><div><span class="label">事件区块</span><strong>24,106,378</strong></div><div><span class="label">调查窗口</span><strong>21 <small>个区块</small></strong></div><div><span class="label">当前示例报告</span><strong id="active-version">加载中</strong></div></div>
+      <div class="case-layout" id="case-body" hidden>
+        <article class="report-card">
+          <div class="section-heading"><div><span class="eyebrow">当前解释</span><h2 id="summary-title">治理执行与转账事实</h2></div><span class="pill synthetic">合成报告</span></div>
+          <p id="report-summary" class="report-summary"></p>
+          <div id="assessments" class="assessments"></div>
+          <div class="scope-note"><strong>结论边界</strong><p>覆盖率只描述保存的数据与有限区块窗口。转入 dead 地址本身不能证明攻击，也不能直接推导 ERC-20 <code>totalSupply()</code> 减少。</p></div>
+          <div class="card-footer"><a href="#verify">下载与验证证据包 <span aria-hidden="true">→</span></a><span>金额以十进制字符串保存</span></div>
+        </article>
+        <aside class="evidence-card" aria-labelledby="evidence-title">
+          <div class="section-heading"><div><span class="eyebrow">证据工作台</span><h2 id="evidence-title">逐项核对</h2></div><span class="pill" id="coverage-status">—</span></div>
+          <div id="evidence-tabs" class="evidence-tabs" role="tablist" aria-label="证据类型">
+            <button id="tab-transfer" type="button" role="tab" aria-selected="true" aria-controls="evidence-panel" data-evidence="transfer">转账</button>
+            <button id="tab-receipt" type="button" role="tab" aria-selected="false" aria-controls="evidence-panel" data-evidence="receipt">回执</button>
+            <button id="tab-governance" type="button" role="tab" aria-selected="false" aria-controls="evidence-panel" data-evidence="governance">治理</button>
+            <button id="tab-coverage" type="button" role="tab" aria-selected="false" aria-controls="evidence-panel" data-evidence="coverage">覆盖</button>
+          </div>
+          <div id="evidence-panel" role="tabpanel" aria-labelledby="tab-transfer" tabindex="0"></div>
+          <details class="state-guide"><summary>怎样理解采集状态？</summary><div class="state-controls" aria-label="状态示例"><button type="button" data-state="complete" aria-pressed="true">完成</button><button type="button" data-state="empty" aria-pressed="false">空结果</button><button type="button" data-state="partial" aria-pressed="false">部分</button><button type="button" data-state="error" aria-pressed="false">错误</button></div><p id="state-explanation" role="status"></p><small>此处演示状态语义，案件证据保持原状。</small></details>
+        </aside>
+      </div>
+      <section class="sources-card" aria-labelledby="sources-title"><div><span class="eyebrow">回到原始来源</span><h2 id="sources-title">公开来源与定位</h2><p>事实摘要由项目编写；完整内容请核对原始页面。离线示例不会主动连接这些网站。</p></div><div class="source-links"><a href="https://etherscan.io/tx/0x091f0083242a777d55821c1189e568d6d033d9da501b75087dc736fa143d2c1e" target="_blank" rel="noopener noreferrer">Ethereum 交易 <span>回执、日志与输入 ↗</span></a><a href="https://vote.uniswapfoundation.org/proposals/93" target="_blank" rel="noopener noreferrer">Uniswap 提案 93 <span>提案行动与执行状态 ↗</span></a><a href="https://blog.uniswap.org/unification" target="_blank" rel="noopener noreferrer">UNIfication <span>治理提案的公开背景 ↗</span></a><a href="https://github.com/Uniswap/governance/blob/master/contracts/Uni.sol" target="_blank" rel="noopener noreferrer">UNI 合约源代码 <span>转账行为与供给量语义 ↗</span></a></div></section>
+    </section>
+    <section class="screen" data-screen="review" aria-labelledby="review-title" hidden>
+      <div class="eyebrow">同一份证据 · 可追溯的解释</div><h1 id="review-title">复核，让结论更准确。</h1><p class="lead narrow">这组 v1/v2 是明确标注的合成报告，演示如何保留原版本并将更正连接到准确的父版本摘要。</p>
+      <div class="review-layout"><article class="report-card"><div class="section-heading"><h2>选择报告版本</h2><span class="pill synthetic">流程演示</span></div><div class="version-controls" role="group" aria-label="示例报告版本"><button type="button" data-version="1" aria-pressed="false"><span>v1</span>示例作者 · 初始解释</button><button type="button" data-version="2" aria-pressed="true"><span>v2</span>示例作者 · 应用更正</button></div><div id="review-version" aria-live="polite"></div></article><aside class="review-context"><span class="eyebrow">复核原则</span><h2>每条判断都能找到依据</h2><ol><li><strong>保留原始解释</strong><span>版本包固定证据与报告字节，读者可以重现当时的判断。</span></li><li><strong>指出可检验的问题</strong><span>将治理背景、转账事件与 supply getter 的主张逐项分开。</span></li><li><strong>绑定准确的父版本</strong><span>v2 保存 v1 manifest SHA-256，支持比较与追溯。</span></li></ol><p class="scope-note">示例作者与示例复核者是自控演示角色。此流程展示版本追溯；独立性和事实正确性需要额外证据。</p><a class="button secondary" href="#case">返回当前案件 <span aria-hidden="true">→</span></a></aside></div>
+    </section>
+    <section class="screen" data-screen="verify" aria-labelledby="verify-title" hidden>
+      <div class="eyebrow">证据随报告一起交付</div><h1 id="verify-title">拿走证据，重新核对。</h1><p class="lead narrow">ZIP 包含公开数据、合成报告与逐文件 manifest。SHA-256 校验用于确认字节完整性；事实与解释仍需核对来源。</p>
+      <div class="verify-layout"><article class="report-card"><div class="section-heading"><h2>下载当前版本</h2><span id="download-version" class="pill">—</span></div><p>保存证据包，再从另一浏览器或设备导入，逐文件核对同一份材料。</p><div class="download-actions"><button id="download-bundle" type="button" class="button" disabled>下载证据 ZIP <span aria-hidden="true">↓</span></button><button id="download-manifest" type="button" class="button secondary" disabled>下载 manifest</button></div><dl class="hash-list"><dt>Manifest SHA-256</dt><dd id="manifest-hash" class="full-hash">加载中</dd><dt>ZIP SHA-256</dt><dd id="archive-hash" class="full-hash">加载中</dd><dt>组成</dt><dd>manifest.json / evidence.json / raw.json / report.json / report.md</dd></dl><details><summary>校验范围</summary><p>检查固定五个文件、ZIP 目录与 CRC32、RFC 8785 规范 JSON、manifest 中每个文件的大小与 SHA-256。当前静态查看器支持未压缩（stored）证据包，上限 16 MiB。校验成功不会产生链上登记或作者身份认证。</p></details></article><article class="report-card import-card"><div class="section-heading"><h2>导入并验证</h2><span class="pill">本地处理</span></div><label class="file-picker" for="bundle-file"><span class="file-icon" aria-hidden="true">↥</span><strong>选择一个证据 ZIP</strong><span>文件在当前浏览器内校验</span><input id="bundle-file" type="file" accept=".zip,application/zip"></label><div id="import-result" class="import-result neutral" role="status"><strong>等待选择文件</strong><p>可以先下载当前示例包，再将它导入。</p></div><div id="import-details" hidden></div></article></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#case"><img src="./assets/mark.svg" alt="" width="24" height="24"><span>ClueTide</span></a><p>让解释回到证据。<span>公开事实 · 合成报告 · 本地完整性验证</span></p><a href="./README.md">示例说明与复现</a></footer>
+</body>
+</html>
