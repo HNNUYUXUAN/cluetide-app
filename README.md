@@ -7,7 +7,9 @@
 | GCC · 调查与证据 | [GCC Demo](https://hnnuyuxuan.github.io/cluetide-app/gcc/) | [GCC source and bilingual guide](https://github.com/HNNUYUXUAN/cluetide-review/tree/GCC) |
 | BOT · Evidence version history | [English BOT Demo](https://hnnuyuxuan.github.io/cluetide-app/bot/) | [BOT source and English guide](https://github.com/HNNUYUXUAN/cluetide-review/tree/BOT) |
 
-These static demos contain public case material, evidence downloads and browser verification. Full local services are documented in the review branches. The review repository is currently private; the demos are public. 本仓库 `docs/gcc` 与 `docs/bot` 托管各赛道构建产物；评审源码位于独立私有仓库的对应分支。
+These static demos contain public case material, evidence downloads and browser verification. Full local services and their setup instructions are available in the public review branches. 本仓库 `docs/gcc` 与 `docs/bot` 托管各赛道构建产物；公开源码及当前启动说明位于对应评审分支。
+
+GCC 工作台入口现在提供 UNI / Euler 双案指引和本机实时调查入口。实时模型的启动、实际进度、证据与版本接续见 [GCC 实时调查指南](https://github.com/HNNUYUXUAN/cluetide-review/blob/GCC/docs/LIVE-DEMO.md)。The hosted GCC workbench guides visitors to the two public cases and local live execution; replay reports remain labelled synthetic examples.
 
 The BOT demo presents four verified transactions on **BOT Mainnet 677**: deployment, v1, an exact-version review, and v2 with parent v1. [Registry contract](https://scan.botchain.ai/address/0x951f7b5c68adba4cefd7fa851cb8e030426e81aa) · [Mainnet proof archive](https://hnnuyuxuan.github.io/cluetide-app/bot/mainnet/bot-mainnet-workflow-20261008.json). The complete receipt files and final getter snapshot are published in `docs/bot/mainnet`.
 
