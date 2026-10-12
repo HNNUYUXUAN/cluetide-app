@@ -1,6 +1,6 @@
 {
   "schema": "cluetide.public-wallet-deployment.v1",
-  "source_commit": "754ffab63f95574b741cbb7300c1c0475f650972",
+  "source_commit": "768e3cd387899fe3755d03f9eda2a1d4f107fbc4",
   "entry": "https://hnnuyuxuan.github.io/cluetide-app/release/",
   "chain_id": 677,
   "contract_address": "0xca71b77708674f5f2407c0ad4e599eaf5eb07281",
@@ -41,9 +41,9 @@
       "sha256": "3a897b59bbff1530c4c5e62ea01f1d8e20f931bf35db1a147fefd02919fc32f7"
     },
     {
-      "path": "assets/workbench-TnqnPaPX.js",
-      "bytes": 366495,
-      "sha256": "c053f935e9981336bbaf950eb5d384d936b83acc19c73bd4874fc01ec6e2679a"
+      "path": "assets/workbench-YriO-fg0.js",
+      "bytes": 366698,
+      "sha256": "f253ced9364d92e563f9202ab8b5b35e58a89d7832584ec0ea908a3c461e5a02"
     },
     {
       "path": "bot-demo/evidence-lineage.png",
@@ -68,7 +68,7 @@
     {
       "path": "index.html",
       "bytes": 793,
-      "sha256": "c12bf4fef20b260457582e226d02ba4db51ae4c0472f9059e9e94a6b41b0e62e"
+      "sha256": "1229d58643661cfa665d369c2cdbf32de820fd7065b49a52bf1dfc590ff54a38"
     },
     {
       "path": "licenses/BROWSER-DEPENDENCIES.txt",
