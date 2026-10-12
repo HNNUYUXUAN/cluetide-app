@@ -1,6 +1,6 @@
 {
   "schema": "cluetide.public-wallet-deployment.v1",
-  "source_commit": "853f8029efdec43dd59708371889804de347bba9",
+  "source_commit": "754ffab63f95574b741cbb7300c1c0475f650972",
   "entry": "https://hnnuyuxuan.github.io/cluetide-app/release/",
   "chain_id": 677,
   "contract_address": "0xca71b77708674f5f2407c0ad4e599eaf5eb07281",
