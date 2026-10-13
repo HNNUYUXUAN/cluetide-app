@@ -1,6 +1,6 @@
 {
   "schema": "cluetide.public-wallet-deployment.v1",
-  "source_commit": "768e3cd387899fe3755d03f9eda2a1d4f107fbc4",
+  "source_commit": "2d5c6103a543e440d810d4e3f9d3eb0617985d46",
   "entry": "https://hnnuyuxuan.github.io/cluetide-app/release/",
   "chain_id": 677,
   "contract_address": "0xca71b77708674f5f2407c0ad4e599eaf5eb07281",
@@ -11,9 +11,9 @@
       "sha256": "f5489451db43bb1700c87186994f1f90416338590566323cc22bff211ec249b4"
     },
     {
-      "path": "assets/bot-D_3w9hEL.js",
+      "path": "assets/bot-D-nYkwLI.js",
       "bytes": 40972,
-      "sha256": "a0a18ee178d26018f89ea2b94e59a20255316c53b52b934f899c8e55f935537c"
+      "sha256": "1bcb19af10ef56b2eb2f99005e976ded024a9eb635cba71352782aa6d3cd1579"
     },
     {
       "path": "assets/native-CJ5et6AR.js",
@@ -21,14 +21,9 @@
       "sha256": "251f3ec7a4be71969e4fcacf84bae782f5164508d94f36b5552ae317560deea0"
     },
     {
-      "path": "assets/ui-D1zrbz7u.js",
-      "bytes": 200735,
-      "sha256": "4734e94022931fb9c8a2605159f7eef8c5fa06965f89a35439eb19df7803b28c"
-    },
-    {
-      "path": "assets/verified-receipt-BMpE88oK.js",
-      "bytes": 2715,
-      "sha256": "975ca1a439dde9cd3c08aae23327a61c095f386fa97197912b3ed42167a2e7cc"
+      "path": "assets/ui-CrvSwYjP.js",
+      "bytes": 200754,
+      "sha256": "d2b95b3ac4b7ea0e0fb0fb1ca1d701e39a6b3fcf47b4c7b51feed16ce514337b"
     },
     {
       "path": "assets/verified-release-BC-rC3Uo.js",
@@ -36,14 +31,24 @@
       "sha256": "328bf7164198cf347cf512facf1c404acb46a25bd17f8a7628cf4e4f211a8a10"
     },
     {
-      "path": "assets/workbench-BoAHvmcn.css",
-      "bytes": 17137,
-      "sha256": "3a897b59bbff1530c4c5e62ea01f1d8e20f931bf35db1a147fefd02919fc32f7"
+      "path": "assets/workbench-8tsQVzVn.js",
+      "bytes": 413623,
+      "sha256": "56396d1444771c4ad0549d261333d06888a332ad069132dba2a3a9764ed00730"
     },
     {
-      "path": "assets/workbench-YriO-fg0.js",
-      "bytes": 366698,
-      "sha256": "f253ced9364d92e563f9202ab8b5b35e58a89d7832584ec0ea908a3c461e5a02"
+      "path": "assets/workbench-Bje1nZWQ.css",
+      "bytes": 18913,
+      "sha256": "5b51041b83e6dffb9dbf7b6ebde38c83d4286c1e412fdd457528999a45c6ce8d"
+    },
+    {
+      "path": "assets/workbench-BsQDUBpF.css",
+      "bytes": 18787,
+      "sha256": "6b9dee8486345d455287c6debc9270e0f41b59fe19b7c5dfb4daf75b62a51a46"
+    },
+    {
+      "path": "assets/workbench-CGYOUHWP.js",
+      "bytes": 414717,
+      "sha256": "ff9df81b4a4928e323dee48bd77639f06dda59098959db8f204743c122703460"
     },
     {
       "path": "bot-demo/evidence-lineage.png",
@@ -68,7 +73,7 @@
     {
       "path": "index.html",
       "bytes": 793,
-      "sha256": "1229d58643661cfa665d369c2cdbf32de820fd7065b49a52bf1dfc590ff54a38"
+      "sha256": "1b309dfa490a652b4203bf3b2062cdcc65ef27a05f0f5ce86667be823828fb4c"
     },
     {
       "path": "licenses/BROWSER-DEPENDENCIES.txt",
