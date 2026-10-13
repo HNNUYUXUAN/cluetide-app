@@ -31,39 +31,14 @@
       "sha256": "328bf7164198cf347cf512facf1c404acb46a25bd17f8a7628cf4e4f211a8a10"
     },
     {
-      "path": "assets/workbench-8tsQVzVn.js",
-      "bytes": 413623,
-      "sha256": "56396d1444771c4ad0549d261333d06888a332ad069132dba2a3a9764ed00730"
-    },
-    {
       "path": "assets/workbench-Bje1nZWQ.css",
       "bytes": 18913,
       "sha256": "5b51041b83e6dffb9dbf7b6ebde38c83d4286c1e412fdd457528999a45c6ce8d"
     },
     {
-      "path": "assets/workbench-BsQDUBpF.css",
-      "bytes": 18787,
-      "sha256": "6b9dee8486345d455287c6debc9270e0f41b59fe19b7c5dfb4daf75b62a51a46"
-    },
-    {
       "path": "assets/workbench-CGYOUHWP.js",
       "bytes": 414717,
       "sha256": "ff9df81b4a4928e323dee48bd77639f06dda59098959db8f204743c122703460"
-    },
-    {
-      "path": "bot-demo/evidence-lineage.png",
-      "bytes": 1780967,
-      "sha256": "d3b377b2482b2e80c8ab3aa62c2bdfb89e51fee8215f2439f6e23a88a52e9408"
-    },
-    {
-      "path": "bot-demo/uni-v1.zip",
-      "bytes": 90066,
-      "sha256": "37e6d1adab334a751a93da1cc5d7f8401229b333f3e3ce50353f650123c67e4b"
-    },
-    {
-      "path": "bot-demo/uni-v2.zip",
-      "bytes": 90566,
-      "sha256": "b8f918413e79f797b3a3606c835d64b79919ca5ecdc369e28723dffa112037d6"
     },
     {
       "path": "favicon.svg",
@@ -94,31 +69,6 @@
       "path": "licenses/scheduler-LICENSE.txt",
       "bytes": 1088,
       "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
-    },
-    {
-      "path": "mainnet/bot-mainnet-deploy-receipt-20261008.json",
-      "bytes": 15715,
-      "sha256": "d5a5b6dc77f1b22cc06e11eb9f7dfcd21dae3a8eee9a89cf8302940eeb32a624"
-    },
-    {
-      "path": "mainnet/bot-mainnet-review-receipt-20261008.json",
-      "bytes": 8483,
-      "sha256": "41a7aaa52116a18114fcf58e78286df9bae06440487a1f651b123b815805b07b"
-    },
-    {
-      "path": "mainnet/bot-mainnet-v1-receipt-20261008.json",
-      "bytes": 8380,
-      "sha256": "3f64e0b6fe4412b2cfa8199c5d4767f78922cc6f0918f13d35889206593f0d86"
-    },
-    {
-      "path": "mainnet/bot-mainnet-v2-receipt-20261008.json",
-      "bytes": 7826,
-      "sha256": "09bb006485511b4854ac4f423b918eae5c7998403e59cabafa889629a38812ab"
-    },
-    {
-      "path": "mainnet/bot-mainnet-workflow-20261008.json",
-      "bytes": 11029,
-      "sha256": "0178d2bf0da11b16f9b55f7214e58ac576274f52a4eac04652e6bb240509adf9"
     }
   ]
 }
