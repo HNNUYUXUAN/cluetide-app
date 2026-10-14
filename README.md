@@ -2,9 +2,9 @@
 
 ## Agent Release Witness review
 
-[English review entry](https://hnnuyuxuan.github.io/cluetide-app/release/) · [Interactive application](https://cluetide-release-review-r4xpxrwg7xvrh5xp5-8787.app.github.dev/) · [Public source and setup](https://github.com/HNNUYUXUAN/cluetide-review/tree/workshop-codex/agent-release-witness)
+[Production application](https://cluetide.vercel.app/) · [Publication API](https://cluetide-release-api.vercel.app/api/releases/readiness) · [Public source and setup](https://github.com/HNNUYUXUAN/cluetide-review/tree/workshop-codex/agent-release-witness)
 
-The release application connects an exact coding-agent package to designated approval, controlled publication, and a signed execution receipt. The UI and API share a dedicated GitHub Codespaces origin. This temporary review environment may sleep; its operator checks public port visibility before each review session. New release-witness mainnet deployment and the continuous wallet recording are pending.
+ClueTide connects an exact coding-agent package to designated approval, one-time publication and a signed receipt on BOT Mainnet 677. The Vercel application uses persistent PostgreSQL storage with automatic request-driven recovery. The former Pages release address redirects to the production application and preserves task/version fragments. Use the [previous-origin backup page](https://hnnuyuxuan.github.io/cluetide-app/release/local-backup.html) to export saved packages, then import them into the production application. Formal fresh-task mainnet acceptance and video inspection remain in progress.
 
 The track demos and investigation instructions below describe the earlier product and retain their original evidence scope.
 
